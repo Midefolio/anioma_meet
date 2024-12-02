@@ -7,10 +7,10 @@ const NavBar = () => {
   
   const Menu = [
     {menu:"Home", url:"/"},
-    {menu:"About Us",  url:"/about"},
-    {menu:"Our Products",  url:"/products"},
-    {menu:"Our Team",  url:"/team"},
+    {menu:"About Us",  url:"/#about"},
+    {menu:"Services",  url:"/#services"},
     {menu:"Contact Us", url:"/contact"},
+    {menu:"Our Team", url:"/team"},
   ]
 
 
@@ -20,19 +20,19 @@ const NavBar = () => {
       <div className="my-container gap-20 centered-align">
       <div className="my-col-4 gap-elements centered-align" onClick={()=> {navigate('/')}}>
        <span className="team-icons c-pointer"><img src="https://img.icons8.com/?size=100&id=1288&format=png&color=FA5252" alt="" /></span>
-        <div className="xs-px15 c-pointer px10 down-2 xs-down-2 interBold">
+        <div className="xs-px15 c-pointer px10 down- xs-down-2 interBold">
           Anioma <span className="faded-sol">Ranch</span>
           <div className="px8 black InterSemiBold">and Produce LTD</div>
         </div>
       </div>
       <div className="centered-elements centered gap-elements space-50 down- centered-align">
-        <button className="px10 pd-10 InterRegular" onClick={()=> {navigate('/')}}>Home</button>
-        <button className="px10 pd-10 InterRegular" onClick={()=> {navigate('/about')}}>About Us</button>
-        <button className="px10 pd-10 InterRegular" onClick={()=> {navigate('/product')}}>Products</button>
+        <a href="#home" className="px10 pd-10 black InterRegular" onClick={()=> {navigate('/')}}>Home</a>
+        <a href="#about" className="px10 black pd-10 InterRegular" onClick={()=> {navigate('/#about')}}>About Us</a>
+        <a href="#services" className="px10 black pd-10 InterRegular">Services</a>
         <button className="px10 pd-10 InterRegular" onClick={()=> {navigate('/product')}}>Our Team</button>
       </div>
       <div>
-        <button className="px10 interBold gap-elements centered-align pd-10 bg-red white rad-10" onClick={()=> {navigate('/contact')}}> <i className="fas fa-phone"></i> Contact Us</button>
+        <a href="#contact" className="px10 black interBold gap-elements centered-align pd-10 bg-red white rad-10"> <i className="fas fa-phone"></i> Contact Us</a>
 
       </div>
       </div>

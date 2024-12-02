@@ -24,10 +24,12 @@ input[type="number"]::-webkit-inner-spin-button {
   -moz-appearance: textfield;
 } 
 
+html{
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   padding:0 ;
-  scroll-behavior: smooth;
   width: 100vw;
   line-height: 1.5;
   height: 100vh;
@@ -785,7 +787,7 @@ nav button {
 }
 .my-btn-sm {
  display: inline-block;
- padding: 20px 30px;
+ padding: 10px 30px;
  border: unset;
 }
 .ov-scroll-in {
@@ -817,7 +819,12 @@ nav button {
 }
 
 /* Laptop */
-@media(min-width: 899px){}
+@media(min-width: 899px){
+  .ls-centered-align {
+    display: flex;
+    align-items: center;
+  }
+}
  /*moblile-pnone*/
 @media(max-width:759px){
   .my-toast {
@@ -958,7 +965,14 @@ iframe {
   /* object-position: center; */
 }
 .bg-landing {
-  height: 230px !important;
+  height: 300px !important;
+}
+.bg-landing-2 {
+  height: 500px !important;
+}
+.dark-scarf {
+  height: 303px !important;
+  margin-top: 21vh;
 }
 
 .catigory-side-bar {

@@ -211,7 +211,7 @@ const Services = () => {
  slidesToSlide={1}
  swipeable
     >
-    <div className="my-mother centered-align space-30 down-10">
+    <div className="my-mother ls-centered-align space-30 down-10">
      <div className="my-col-5 xs-12 m-12">
       <div className="img-container h-600">
         {/* <div className="   */}
@@ -222,18 +222,18 @@ const Services = () => {
             />
         </div>
      </div>
-     <div className="my-col-6 off-1 xs-12 md-12 xs-down-5 centered-align xs-centered">
+     <div className="my-col-6 off-1 xs-12 md-12 xs-down-5 ls-centered-align xs-centered">
       <div>
       <div className="my-mother xs-down-2 md-down-2"><span className="px20 xs-px20 black poppings-Bold">Livestock Management</span></div>
        <div className="my-mother justif xs-down-3 md-down-2 down-1">
         <span className="px13 xs-px15 faded poppings-Light">We specialize in the breeding and care of healthy, grass-fed cattle, goats, and pigs, adhering to the highest standards of animal welfare and organic production.</span>
        </div>
-       <div className="my-mother down-4 xs-down-10 md-down-5"> <button className="my-btn-sm bg-red white c-pointer interBold px12 rad-10">Contact Us</button></div>
-      </div>
+       <div className="my-mother down-4 xs-down-10 md-down-5"> <button className="my-btn-sm xs-px15 xs-px15 bg-red white c-pointer interBold px12 rad-10">Contact Us</button></div>
+      </div>  
     </div>
     </div>
 
-    <div className="my-mother centered-align space-30 down-10">
+    <div className="my-mother ls-centered-align space-30 down-10">
      <div className="my-col-5 xs-12 m-12">
       <div className="img-container h-600">
         {/* <div className="   */}
@@ -244,18 +244,18 @@ const Services = () => {
             />
         </div>
      </div>
-     <div className="my-col-6 off-1 xs-12 md-12 xs-down-5 centered-align xs-centered">
+     <div className="my-col-6 off-1 xs-12 md-12 xs-down-5 ls-centered-align xs-centered">
       <div>
       <div className="my-mother xs-down-2 md-down-2"><span className="px20 xs-px20 black poppings-Bold">Pasture Management</span></div>
        <div className="my-mother justif xs-down-3 md-down-2 down-1">
         <span className="px13 xs-px15 faded poppings-Light">Our advanced grazing techniques ensure the best possible pasture quality, supporting livestock health and preserving the environment.</span>
        </div>
-       <div className="my-mother down-4 xs-down-10 md-down-5"> <button className="my-btn-sm bg-red white c-pointer interBold px12 rad-10">Contact Us</button></div>
+       <div className="my-mother down-4 xs-down-10 md-down-5"> <button className="my-btn-sm xs-px15 bg-red white c-pointer interBold px12 rad-10">Contact Us</button></div>
       </div>
     </div>
     </div>
 
-    <div className="my-mother centered-align space-30 down-10">
+    <div className="my-mother ls-centered-align space-30 down-10">
      <div className="my-col-5 xs-12 m-12">
       <div className="img-container h-600">
         {/* <div className="   */}
@@ -266,18 +266,18 @@ const Services = () => {
             />
         </div>
      </div>
-     <div className="my-col-6 off-1 xs-12 md-12 xs-down-5 centered-align xs-centered">
+     <div className="my-col-6 off-1 xs-12 md-12 xs-down-5 ls-centered-align xs-centered">
       <div>
       <div className="my-mother xs-down-2 md-down-2"><span className="px20 xs-px20 black poppings-Bold">Organic Meats & Dairy</span></div>
        <div className="my-mother justif xs-down-3 md-down-2 down-1">
         <span className="px13 xs-px15 faded poppings-Light">Every product from Anioma Ranch is 100% organic, chemical-free, and designed to meet the nutritional and ethical expectations of today’s health-conscious consumers.</span>
        </div>
-       <div className="my-mother down-4 xs-down-10 md-down-5"> <button className="my-btn-sm bg-red white c-pointer interBold px12 rad-10">Contact Us</button></div>
+       <div className="my-mother down-4 xs-down-10 md-down-5"> <button className="my-btn-sm xs-px15 bg-red white c-pointer interBold px12 rad-10">Contact Us</button></div>
       </div>
     </div>
     </div>
 
-    <div className="my-mother centered-align space-30 down-10">
+    <div className="my-mother ls-centered-align space-30 down-10">
      <div className="my-col-5 xs-12 m-12">
       <div className="img-container h-600">
         {/* <div className="   */}
@@ -288,18 +288,18 @@ const Services = () => {
             />
         </div>
      </div>
-     <div className="my-col-6 off-1 xs-12 md-12 xs-down-5 centered-align xs-centered">
+     <div className="my-col-6 off-1 xs-12 md-12 xs-down-5 ls-centered-align xs-centered">
       <div>
       <div className="my-mother xs-down-2 md-down-2"><span className="px20 xs-px20 black poppings-Bold"> Innovation & Training Hub</span></div>
        <div className="my-mother justif xs-down-3 md-down-2 down-1">
         <span className="px13 xs-px15 faded poppings-Light">We serve as a center for knowledge sharing, training, and collaboration, equipping farmers and stakeholders with the tools to adopt sustainable and innovative ranching practices.</span>
        </div>
-       <div className="my-mother down-4 xs-down-10 md-down-5"> <button className="my-btn-sm bg-red white c-pointer interBold px12 rad-10">Contact Us</button></div>
+       <div className="my-mother down-4 xs-down-10 md-down-5"> <button className="my-btn-sm xs-px15 bg-red white c-pointer interBold px12 rad-10">Contact Us</button></div>
       </div>
     </div>
     </div>
 
-    <div className="my-mother centered-align space-30 down-10">
+    <div className="my-mother ls-centered-align space-30 down-10">
      <div className="my-col-5 xs-12 m-12">
       <div className="img-container h-600">
         {/* <div className="   */}
@@ -310,13 +310,13 @@ const Services = () => {
             />
         </div>
      </div>
-     <div className="my-col-6 off-1 xs-12 md-12 xs-down-5 centered-align xs-centered">
+     <div className="my-col-6 off-1 xs-12 md-12 xs-down-5 ls-centered-align xs-centered">
       <div>
       <div className="my-mother xs-down-2 md-down-2"><span className="px20 xs-px20 black poppings-Bold">Community Engagement</span></div>
        <div className="my-mother justif xs-down-3 md-down-2 down-1">
         <span className="px13 xs-px15 faded poppings-Light">Through job creation, conflict resolution, and empowerment programs, we work hand-in-hand with local communities to drive economic growth and social harmony.</span>
        </div>
-       <div className="my-mother down-4 xs-down-10 md-down-5"> <button className="my-btn-sm bg-red white c-pointer interBold px12 rad-10">Contact Us</button></div>
+       <div className="my-mother down-4 xs-down-10 md-down-5"> <button className="my-btn-sm xs-px15 bg-red white c-pointer interBold px12 rad-10">Contact Us</button></div>
       </div>
     </div>
     </div>
