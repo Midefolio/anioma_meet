@@ -30,7 +30,7 @@ const MyFooter = () => {
         <div className="my-mother down-3 xs-down-3 md-down-3">
         <div className="px13 alice xs-px13 gap-elements md-px20">
           <input type="text" placeholder="Type your email" className="my-col-7 xs-9 xs-px12 md-px13 input-2 px9 InterLight bg-white rad-10" />
-          <span className="white px10 xs-px12 input centered-align flex my-col-3 xs-3 bg-red rad-10">Submit</span>
+          <span className="white px10 xs-px12 input centered-align flex unset-indent my-col-3 xs-3 bg-red rad-10">Submit</span>
         </div>
       </div>
       </div>
@@ -38,10 +38,10 @@ const MyFooter = () => {
       <div className="px13 alice down-10 ls-right xs-px13 md-px20 poppings-Bold upper-case">Socials</div>
         <div className="my-mother ls-right down-6 md-down-3 xs-down-2">
         <div className="px13 alice xs-px13 ls-right xs-down-5 gap-eements md-px20">
-          <a href="https://www.facebook.com/share/1E4kn5J2Be/" className="pd-5 white"><i className="fab fa-facebook"></i></a>
-          <a href="https://x.com/foldaapp" className="pd-5 white mg-5"><i className="fab fa-twitter"></i></a>
-          <a href="https://instagram.com/checkfolda" className="pd-5 white mg-5"><i className="fab fa-instagram"></i></a>
-          <a href="https://www.linkedin.com/company/foldaapp/" className="pd-5 white mg-5"><i className="fab fa-linkedin"></i></a>
+          <a href="" className="pd-5 white"><i className="fab fa-facebook"></i></a>
+          <a href="" className="pd-5 white mg-5"><i className="fab fa-twitter"></i></a>
+          <a href="" className="pd-5 white mg-5"><i className="fab fa-instagram"></i></a>
+          <a href="" className="pd-5 white mg-5"><i className="fab fa-linkedin"></i></a>
         </div>
         <div className="my-mother down-3 white xs-down-3 xs-px15">@aniomaranch</div>
         <div className="my-mother hidden-xs hidden-md hidden-ls down-8 xs-down-3 md-down-3"><span className="px12 xs-px13 md-px20 hidden-xs lower-case alice"><i className="fas fa-map-marker-alt color-code-1"></i> Umuaja, Delta State, Nigeria  </span></div>

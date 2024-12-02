@@ -191,12 +191,12 @@ nav {
   background-color: #fff;
 }
 
-nav button:hover {
+nav a:hover {
   background-color:rgba(0, 0, 0, 0.3);
   transition: .3s ease-in-out;
   color: white;
 }
-nav button {
+nav a {
   transition: .3s ease-in-out;
   border-radius: 10px;
 }
@@ -232,10 +232,18 @@ nav button {
   /* background-color: red; */
   overflow: scroll;
 }
+.h-300 {
+  height: 300px !important;
+}
 .active-side {
   /* box-shadow: 0px 0px 2px #1A73E8 !important; */
-  color: #1A73E8 !important;
-  border-bottom: 2px solid #1A73E8;
+  transition: .3s ease-in-out;
+  color: white  !important;
+  background-color:rgba(0, 0, 0, 0.3);
+}
+.livestock:hover {
+  background-color:rgba(0, 0, 0, 0.1);
+  transition: .3s ease-in-out;
 }
 .shadow {
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1);
@@ -378,7 +386,7 @@ nav button {
   background-position:center;
   background-size:cover;
   overflow: hidden;
-  background-image: url(https://img.freepik.com/free-photo/side-view-chef-makes-raw-marbled-beef-steaks-stand_141793-12509.jpg?t=st=1733099285~exp=1733102885~hmac=145170e4ab31418ce7a039862819b5e496a6a4a2449c27fa1fa30eebe8e8f494&w=740);
+  background-image: url(https://img.freepik.com/premium-photo/lot-chopped-fresh-raw-pork-beef-meat-hanging-arrange-processing-deposit-refrigerator-factory_246930-408.jpg?w=740);
 }
 .bg-landing video {
   width: 100%;

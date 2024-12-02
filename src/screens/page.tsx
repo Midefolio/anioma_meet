@@ -5,12 +5,15 @@ import vid from "../images/17556777-uhd_3840_2160_24fps.mp4";
 import Fade from "react-reveal"
 import Snowfall from 'react-snowfall';
 import MyFooter from "../component/footer";
+import { useNavigate } from "react-router-dom";
+import LiveStock from "../component/livestock";
 
 
 const Home = () => {
+  const Navigate = useNavigate();
   return (
     <>
-      <NavBar />
+      <NavBar active={'home'} />
       <div className="bg-landing xs-down-6" id="home">
         <video controls={false} autoPlay muted loop id="myVideo" className="">
           <source src={vid} type="video/mp4" />
@@ -18,20 +21,20 @@ const Home = () => {
       </div>
         
       <div className="dark-scarf xs-down-0vh">
-      <Snowfall
+      {/* <Snowfall
           color="white"       // Color of snowflakes
           snowflakeCount={50} // Number of snowflakes
-            />
+            /> */}
           <Fade bottom>
           <div className="my-container xs-container centred down-30">
             <div className="my-col-8 xs-12 xs-down-10 o-2"><span className="px40 xs-px30 white poppings-Bold">Welcome to <span className="">Anioma</span> <span className="faded-sol">Ranch</span>  and <span className="faded-sol">Produce</span> Ltd</span></div>
             <div className="my-col-10 off down-3 "><span className="white poppings-Light px15 xs-px13">Revolutionizing Livestock Management, Empowering Communities, Securing Tomorrow</span></div>
              <div className="my-mother centerd-elements down-5 xs-down-5 centeed">
             <Fade bottom>
-            <a href="#contact" className="px12 black interBold gap-elements my-btn-sm bg-red white rad-10"> Contact Us</a>
+            <a onClick={()=> {Navigate('/contact_us')}} className="px12 xs-px12 black interBold gap-elements my-btn-sm bg-red white rad-10"> Contact Us</a>
              </Fade>
              <Fade bottom>
-             <a href="#about" className="px12 black interBold gap-elements my-btn-sm bg-white mg-10 rad-10"> About Us</a>
+             <a href="#about" className="px12 xs-px12 black interBold gap-elements my-btn-sm bg-white mg-10 rad-10"> About Us</a>
                </Fade>
              </div>
           </div>
@@ -39,31 +42,87 @@ const Home = () => {
       </div>
         
         <div className="my-mother down-1 my-bottom-50" id="about">
-          {/* <div className="my-container"> <WhyChoose/></div> */}
-          <div className="my-container xs-container xs-down-10 ls-centered-align down-5">
+          <div className="my-container xs-container xs-down-3 ls-centered-align down-5">
           <Fade left>
-            <div className="my-col-6 xs-12 down-5">
+            <div className="my-col-6 xs-12 xs-down-10 down-5">
                <div><span className="px20 xs-px25 poppings-Bold">About <span className="faded-sol">Us</span></span></div>
+          <div className="my-col-5  hidden-ls off-1 down-10 xs-down-5  xs-12">
+              <div className="img-container h-600 rad-20"><img className="rad-10" src="https://img.freepik.com/free-photo/separated-grilled-ribs-wooden-board-side-view_141793-12483.jpg?ga=GA1.1.699054498.1719408236&semt=ais_hybrid" alt="" /></div>
+            </div>
                 <div className="px13 xs-px15 justify poppings-Light xs-down-5 my-mother down-3 faded">
                 At Anioma Ranch and Produce Ltd we are transforming the face of livestock management in Nigeria and beyond. Our mission is to redefine ranching by combining cutting-edge technology with eco-friendly practices to produce premium organic meats and dairy products. Specializing in the ethical rearing of cattle, goats, and pigs, we prioritize sustainable pasture management and integrated farming techniques that promote environmental conservation, community development, and food security.
                 </div>
               <div className="my-mother hidden-xs down-5">
               <Fade top>
-              <button className="my-btn-sm bg-red white c-pointer poppings-Bold px12 rad-10 my-b-shadow">Learn More</button>
+              <button onClick={()=> {Navigate('/about_us')}} className="my-btn-sm bg-red white c-pointer poppings-Bold px12 rad-10 my-b-shadow">Learn More</button>
               </Fade>
               </div>
             </div>
             </Fade>
             <Fade right>
-            <div className="my-col-5 off-1 down-10 xs-down-5 xs-12">
+            <div className="my-col-5 off-1 hidden-xs down-10 xs-down-5 xs-12">
               <div className="img-container h-600 rad-20"><img className="rad-10" src="https://img.freepik.com/free-photo/separated-grilled-ribs-wooden-board-side-view_141793-12483.jpg?ga=GA1.1.699054498.1719408236&semt=ais_hybrid" alt="" /></div>
             </div>
             </Fade>
             <div className="my-mother down-5 hidden-ls xs-down-10">
               <Fade top>
-              <button className="my-btn-sm bg-red xs-px13 b-shadow white c-pointer poppings-Bold px12 rad-10 my-b-shadow">Learn More</button>
+              <button onClick={()=> {Navigate('/about_us')}} className="my-btn-sm bg-red xs-px13 b-shadow white c-pointer poppings-Bold px12 rad-10 my-b-shadow">Learn More</button>
               </Fade>
               </div>
+          </div>
+        </div>
+
+        <div className="my-mother my-bottom-50">
+          <div className="my-container down-8">
+            <div className="my-mother centered"><span className="px30 poppings-Bold">Live<span className="faded-sol">Stock</span> Farming</span></div>
+            <div className="my-col-10 off-1 centered down-1">
+              <span className="px15 poppings-Light ">At Anioma Ranch and produce limited, we specialize in providing comprehensive livestock management services tailored to meet the needs </span>
+            </div>
+           
+            {/* <div className="my-mother"><LiveStock/></div> */}
+           
+            <div className="gap-elements my-mother space-50 down-10">
+              <div className="my-col-4 livestock bg-fade-2 my-b-shadow rad-10 my-bottom-50">
+                <div className="img-container h-300"><img className="rad-10" src="https://img.freepik.com/free-photo/group-pigs-domestic-animals-pig-farm_342744-522.jpg?t=st=1733141750~exp=1733145350~hmac=8daf837896e65d6b73602e32cea790b171994472d8d56739cad450552719baa1&w=740" alt="" /></div>
+               <div className="my-container down-5">
+               <div><span className="px15 poppings-Bold">Pig <span className="faded-sl">Farming</span> <i className="fas fa-angle-right poppings-Bold  mg-10 faded-sol"></i> </span></div>
+                <div className="my-mother down-2"><span className="px12 poppings-Light faded">In our pig farming, or swine production, we are focused on the breeding, raising, and management of pigs for meat (pork) and other by-products</span></div>
+                <div className="my-mother down-3">
+                  <Fade bottom>
+                   <a href="#about" className="px12 xs-px12 poppings-Light gap-elements my-btn-m red rad-10">View More</a>
+                  </Fade>
+               </div>
+               </div>
+              </div>
+
+              <div className="my-col-4 livestock bg-fade-2 my-b-shadow rad-10 my-bottom-50">
+                <div className="img-container h-300"><img className="rad-10" src="https://img.freepik.com/free-photo/high-angle-farm-with-goats_23-2148672987.jpg?t=st=1733143621~exp=1733147221~hmac=f831207c72e1fc69c23bc08b9f93e708b9817055114abce16b3c99b1735642cf&w=740" alt="" /></div>
+               <div className="my-container down-5">
+               <div><span className="px15 poppings-Bold">Goat <span className="faded-sl">Farming</span> <i className="fas fa-angle-right poppings-Bold  mg-10 faded-sol"></i> </span></div>
+                <div className="my-mother down-2"><span className="px12 poppings-Light faded">Our goat farming is a profitable and sustainable agricultural practice that involves raising goats for their milk, meat, fiber, or as pets</span></div>
+                <div className="my-mother down-3">
+                  <Fade bottom>
+                   <a href="#about" className="px12 xs-px12 poppings-Light gap-elements  red rad-10">View More</a>
+                  </Fade>
+               </div>
+               </div>
+              </div>
+
+              <div className="my-col-4 livestock bg-fade-2 my-b-shadow rad-10 my-bottom-50">
+                <div className="img-container h-300"><img className="rad-10" src="https://img.freepik.com/premium-photo/livestock-confinement-oxen-cows-sunny-day_208861-506.jpg?w=740" alt="" /></div>
+               <div className="my-container down-5">
+               <div><span className="px15 poppings-Bold">Cow <span className="faded-sl">Farming</span> <i className="fas fa-angle-right poppings-Bold  mg-10 faded-sol"></i> </span></div>
+                <div className="my-mother down-2"><span className="px12 poppings-Light faded">Our cow farming, also known as cattle farming, involves the raising and managing cows for various purposes</span></div>
+                <div className="my-mother down-3">
+                  <Fade bottom>
+                   <a href="#about" className="px12 xs-px12 poppings-Light gap-elements  red rad-10">View More</a>
+                  </Fade>
+               </div>
+               </div>
+              </div>
+
+             
+            </div>
           </div>
         </div>
 
@@ -107,7 +166,7 @@ const Home = () => {
         <div className="my-col-8"><span className="px30 xs-px25 poppings-Bold">Why Choose <span className="red">Anioma</span>  Ranch and Produce Ltd ?</span></div>
          <div className="my-mother xs-down-10 down-5"><WhyChoose/></div>
                 <Fade top>
-              <button className="my-btn-sm xs-px15 off-2 bg-red white c-pointer poppings-Bold px12 rad-10 my-b-shadow">Contact Us Today !</button>
+              <button  onClick={()=> {Navigate('/contact_us')}} className="my-btn-sm xs-px15 off-2 bg-red white c-pointer poppings-Bold px12 rad-10 my-b-shadow">Contact Us Today !</button>
               </Fade>
         </div>
       </div>

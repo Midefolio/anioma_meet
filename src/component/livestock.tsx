@@ -1,6 +1,6 @@
 // import Carousel from "react-multi-carousel";
 // import "react-multi-carousel/lib/styles.css";
-// const Services = () => {
+// const LiveStock = () => {
 //   return (
 //     <>
 //       <Carousel
@@ -153,7 +153,7 @@
 //   );
 // };
 
-// export default Services;
+// export default LiveStock;
 
 
 
@@ -161,7 +161,7 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { useNavigate } from "react-router-dom";
-const Services = () => {
+const LiveStock = () => {
   const Navigate = useNavigate();
     return ( <>
      <Carousel 
@@ -213,24 +213,21 @@ const Services = () => {
  slidesToSlide={1}
  swipeable
     >
-    <div className="my-mother ls-centered-align space-30 down-10">
+    <div className="my-col-11 ls-centered-align space-30 down-10">
      <div className="my-col-5 xs-12 m-12">
       <div className="img-container h-600">
         {/* <div className="   */}
-        <img
-         src="https://img.freepik.com/free-photo/veterinarian-doctor-with-tablet-examining-pigs-pig-farm_342744-358.jpg?ga=GA1.1.699054498.1719408236&semt=ais_hybrid"
-          alt=""
-          className="rad-20"
-            />
+        <img className="rad-20" src="https://img.freepik.com/free-photo/group-pigs-domestic-animals-pig-farm_342744-522.jpg?t=st=1733141750~exp=1733145350~hmac=8daf837896e65d6b73602e32cea790b171994472d8d56739cad450552719baa1&w=740" alt="" />
+              
         </div>
      </div>
      <div className="my-col-6 off-1 xs-12 md-12 xs-down-5 ls-centered-align xs-centered">
       <div>
-      <div className="my-mother xs-down-2 md-down-2"><span className="px20 xs-px20 black poppings-Bold">Livestock Management</span></div>
+      <div><span className="px25 poppings-Bold">Pig <span className="rol">Farming</span> <i className="fas fa-angle-right poppings-Bold  mg-10 faded-sol"></i> </span></div>
        <div className="my-mother justif xs-down-3 md-down-2 down-1">
-        <span className="px13 xs-px15 faded poppings-Light">We specialize in the breeding and care of healthy, grass-fed cattle, goats, and pigs, adhering to the highest standards of animal welfare and organic production.</span>
+        <span className="px15 xs-px15 faded poppings-Light">We specialize in the breeding and care of healthy, grass-fed cattle, goats, and pigs, adhering to the highest standards of animal welfare and organic production.</span>
        </div>
-       <div className="my-mother down-4 xs-down-10 md-down-5"> <button  onClick={()=> {Navigate('/contact_us')}} className="my-btn-sm xs-px15 xs-px15 bg-red white c-pointer interBold px12 rad-10">Contact Us</button></div>
+       <div className="my-mother down-4 xs-down-10 md-down-5"> <button  onClick={()=> {Navigate('/contact_us')}} className="my-btn-sm my-b-shadow  xs-px15 xs-px15 bg-white red c-pointer poppings-Light px12 rad-10">View More</button></div>
       </div>  
     </div>
     </div>
@@ -239,20 +236,18 @@ const Services = () => {
      <div className="my-col-5 xs-12 m-12">
       <div className="img-container h-600">
         {/* <div className="   */}
-        <img
-              src="https://img.freepik.com/free-photo/indigenous-person-doing-daily-chores-showcasing-lifestyle_23-2149711096.jpg?ga=GA1.1.699054498.1719408236&semt=ais_hybrid"
-              alt=""
-              className="rad-20"
-            />
+        <img className="rad-20" src="https://img.freepik.com/free-photo/group-pigs-domestic-animals-pig-farm_342744-522.jpg?t=st=1733141750~exp=1733145350~hmac=8daf837896e65d6b73602e32cea790b171994472d8d56739cad450552719baa1&w=740" alt="" />
+              
+    
         </div>
      </div>
      <div className="my-col-6 off-1 xs-12 md-12 xs-down-5 ls-centered-align xs-centered">
       <div>
       <div className="my-mother xs-down-2 md-down-2"><span className="px20 xs-px20 black poppings-Bold">Pasture Management</span></div>
        <div className="my-mother justif xs-down-3 md-down-2 down-1">
-        <span className="px13 xs-px15 faded poppings-Light">Our advanced grazing techniques ensure the best possible pasture quality, supporting livestock health and preserving the environment.</span>
+        <span className="px13 xs-px15 faded poppings-Light">In our pig farming, or swine production, we are focused on the breeding, raising, and management of pigs for meat (pork) and other by-products.</span>
        </div>
-       <div className="my-mother down-4 xs-down-10 md-down-5"> <button  onClick={()=> {Navigate('/contact_us')}} className="my-btn-sm xs-px15 bg-red white c-pointer interBold px12 rad-10">Contact Us</button></div>
+       <div className="my-mother down-4 xs-down-10 md-down-5"> <button  onClick={()=> {Navigate('/contact_us')}} className="my-btn-sm xs-px15 bg-red white c-pointer interBold px12 rad-10">View More</button></div>
       </div>
     </div>
     </div>
@@ -329,4 +324,4 @@ const Services = () => {
     </> );
 }
  
-export default Services;
+export default LiveStock;
