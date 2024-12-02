@@ -60,6 +60,7 @@ body {
   width: 100%;
   display: inline-flex;
   height: 42px;
+  text-indent: 10px;
   border:unset;
   background-color:transparent;
   padding: 0;

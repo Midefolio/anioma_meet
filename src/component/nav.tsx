@@ -7,9 +7,9 @@ const NavBar = () => {
   
   const Menu = [
     {menu:"Home", url:"/"},
-    {menu:"About Us",  url:"/#about"},
-    {menu:"Services",  url:"/#services"},
-    {menu:"Contact Us", url:"/contact"},
+    {menu:"About Us",  url:"#about"},
+    {menu:"Services",  url:"#services"},
+    {menu:"Contact Us", url:"/contact_us"},
     {menu:"Our Team", url:"/team"},
   ]
 
@@ -49,6 +49,8 @@ const NavBar = () => {
             <span className="bg-red pd-10 centered-align" onClick={()=> {setOpen(true)}}><i className="fas fa-bars white xs-px20"></i></span></div>
        </div>
      </div>
+
+
      <div className="xs-container hidden-ls centered-align xs-down-12vh">
         <div className="input gap-elements black interBold bd-code-1 xs-down-3 flex xs-px15 unset-indent">
             <span className="xs-px15 px20"><i className="fas fa-phone"></i></span>
@@ -67,9 +69,9 @@ const NavBar = () => {
          </div>
          <div className="my-mother xs-down-5">
            {Menu?.map((i, index:any) => (
-            <div className="bd-bottom xs-down-5  my-bottom-20 my-mother centered-align" key={index}>
-              <span className="xs-px15 white InterSemiBold">{i.menu}</span>
-            </div>
+            <a href={i.url} className="bd-bottom xs-down-5  my-bottom-20 my-mother centered-align" onClick={()=> {setOpen(false); navigate(i.url)}} key={index}>
+              <a className="xs-px15 white InterSemiBold">{i.menu}</a>
+            </a>
            ))}
          </div>
        </div>

@@ -10,6 +10,8 @@ import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Home from "./screens/page";
+import Contact from "./component/contact_us";
+import About from "./screens/about";
 
 
 
@@ -18,6 +20,8 @@ const App = () => {
     createRoutesFromElements(
       <>
         <Route path="/" element={<Home/>}/>
+        <Route path="/contact_us" element={<Contact/>}/>
+        <Route path="/about_us" element={<About/>}/>
       </>
     )
   );
