@@ -32,7 +32,7 @@ const NavBar = () => {
         <button className="px10 pd-10 InterRegular" onClick={()=> {navigate('/product')}}>Our Team</button>
       </div>
       <div>
-        <a href="#contact" className="px10 black interBold gap-elements centered-align pd-10 bg-red white rad-10"> <i className="fas fa-phone"></i> Contact Us</a>
+        <a href="#contact" className="px10 black interBold gap-elements centered-align my-btn-sm bg-red white rad-10"> <i className="fas fa-phone"></i> Contact Us</a>
 
       </div>
       </div>

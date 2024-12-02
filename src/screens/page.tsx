@@ -31,10 +31,10 @@ const Home = () => {
             <div className="my-col-10 off down-3 "><span className="white poppings-Light px15 xs-px13">Revolutionizing Livestock Management, Empowering Communities, Securing Tomorrow</span></div>
              <div className="my-mother centerd-elements down-5 xs-down-5 centeed">
             <Fade bottom>
-               <button className="my-btn-sm bg-red white c-pointer poppings-Bold px12 xs-px12 rad-10">Contact Us</button>
+            <a href="#contact" className="px12 black interBold gap-elements my-btn-sm bg-red white rad-10"> Contact Us</a>
              </Fade>
              <Fade bottom>
-               <button className="my-btn-sm mg-10 c-pointer bg-white poppings-Bold px12 xs-px12 rad-10">About Us</button>
+             <a href="#about" className="px12 black interBold gap-elements my-btn-sm bg-white mg-10 rad-10"> About Us</a>
                </Fade>
              </div>
           </div>
