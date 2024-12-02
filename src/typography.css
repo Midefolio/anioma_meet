@@ -386,6 +386,9 @@ body {
    .ls-h-100vh {
     height: 100vh !important;
   }
+  .h-600 {
+    height: 600px;
+  }
    .my-container{
     width: 90%;
     margin-left: 5%;

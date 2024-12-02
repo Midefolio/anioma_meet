@@ -24,21 +24,21 @@ input[type="number"]::-webkit-inner-spin-button {
   -moz-appearance: textfield;
 } 
 
-body, html {
+body {
   margin: 0;
   padding:0 ;
   scroll-behavior: smooth;
   width: 100vw;
-  line-height: 1.3;
+  line-height: 1.5;
   height: 100vh;
   background-color:#fff;
+  overflow-x: hidden;
   font-family:InterRegular;
   color:#000;
 }
 .img-container {
   width: 100%;
   height: 200px;
-  background-color:red;
   overflow: hidden !important;
  }
  .img-container img {
@@ -181,13 +181,21 @@ nav {
   width: 100%;
   display: inline-flex;
   position: fixed;
-  height: 70px;
+  height: 120px;
   top: 0;
-  z-index: 10;
-  /* box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.1); */
+  z-index: 20999970;
   align-items: center;
-  /* padding-bottom: 10px; */
   background-color: #fff;
+}
+
+nav button:hover {
+  background-color:rgba(0, 0, 0, 0.3);
+  transition: .3s ease-in-out;
+  color: white;
+}
+nav button {
+  transition: .3s ease-in-out;
+  border-radius: 10px;
 }
 .solCart-logo {
   width: 150px;
@@ -351,11 +359,23 @@ nav {
   width: 100%;
   position: relative;
   float: left;
-  height: 300px;
+  height:100vh;
+  /* z-index: 19927; */
   background-position:center;
   background-size:contain;
   overflow: hidden;
   /* background-image: url(https://img.freepik.com/premium-photo/ecommerce-market-shopping-online-vector-illustration_1199903-22669.jpg?ga=GA1.2.699054498.1719408236&semt=ais_hybrid); */
+}
+.bg-landing-2 {
+  width: 100%;
+  position: relative;
+  float: left;
+  height:100vh;
+  /* z-index: 19927; */
+  background-position:center;
+  background-size:cover;
+  overflow: hidden;
+  background-image: url(https://img.freepik.com/free-photo/side-view-chef-makes-raw-marbled-beef-steaks-stand_141793-12509.jpg?t=st=1733099285~exp=1733102885~hmac=145170e4ab31418ce7a039862819b5e496a6a4a2449c27fa1fa30eebe8e8f494&w=740);
 }
 .bg-landing video {
   width: 100%;
@@ -718,7 +738,7 @@ nav {
  }
 
 .faded {
- color: #f0f0f0 !important;
+ color: #555 !important;
 }
 
 .c-pointer {
@@ -1232,10 +1252,23 @@ animation: skeletonss 2s infinite linear;
 }
 
 .dark-scarf {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 664577;
   /* background: linear-gradient(to top, rgba(0, 0, 0, 0.3), black); */
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.dark-scarf-2 {
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  z-index: 664577;
+  /* background: linear-gradient(to top, rgba(0, 0, 0, 0.3), black); */
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.z-100 {
+  z-index: 3748734853647;
 }
 .search-con {
   width:99%;
@@ -2057,10 +2090,10 @@ a{
   opacity: 0;
   transform: translateX(-100vw);
   position: fixed;
-  transition: .5s ease-in-out;
+  transition: .3s ease-in-out;
 }
 .open {
-  transition: .5s ease-in-out;
+  transition: .3s ease-in-out;
   opacity: 1;
   transform: translateX(0px);
 }
