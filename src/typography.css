@@ -608,52 +608,52 @@ body {
      margin-top: 50vh; 
    } 
    .top-1{
-     margin-top: -1%; 
+     margin-top: -1vh; 
    } 
    .top-2{
-     margin-top: -2%; 
+     margin-top: -2vh; 
    } 
    .top-3{
-     margin-top: -3%; 
+     margin-top: -3vh; 
    } 
    .top-4{
-     margin-top: -4%; 
+     margin-top: -4vh; 
    } 
    .top-5{
-     margin-top: -5%; 
+     margin-top: -5vh; 
    } 
    .top-6{
-     margin-top: -6%; 
+     margin-top: -6vh; 
    } 
    .top-7{
-     margin-top: -7%; 
+     margin-top: -7vh; 
    } 
    .top-8{
-     margin-top: -8%; 
+     margin-top: -8vh; 
    } 
    .top-9{
-     margin-top: -9%; 
+     margin-top: -9vh; 
    } 
    .top-10{
-     margin-top: -10%; 
+     margin-top: -10vh; 
    } 
    .top-15{
-     margin-top: -15%; 
+     margin-top: -15vh; 
    } 
    .top-16{
-     margin-top: -16%; 
+     margin-top: -16vh; 
    } 
    .top-17{
-     margin-top: -17%; 
+     margin-top: -17vh; 
    } 
    .top-18{
-     margin-top: -18%; 
+     margin-top: -18vh; 
    } 
    .top-30{
-     margin-top: -30%; 
+     margin-top: -30vh; 
    } 
    .top-60{
-     margin-top: -87.9%; 
+     margin-top: -87.9vh; 
    }  
   }
   
@@ -1357,7 +1357,7 @@ body {
    z-index: 30; 
   }
   .my-bottom-50 {
-   padding-bottom: 50px;  
+   padding-bottom: 5vh;  
   }
   
   /* keyframes */

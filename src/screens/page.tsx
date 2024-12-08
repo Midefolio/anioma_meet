@@ -1,251 +1,187 @@
-import NavBar from "../component/nav";
-import WhyChoose from "../component/whyChoose";
-import Services from "../component/services";
-import vid from "../images/17556777-uhd_3840_2160_24fps.mp4";
-import Fade from "react-reveal"
-import Snowfall from 'react-snowfall';
-import MyFooter from "../component/footer";
-import { useNavigate } from "react-router-dom";
-import LiveStock from "../component/livestock";
-
-
+import element from "../images/elements1.png"
+import header from "../images/header-img1.png"
+import web from "../images/web.png"
+import circle from "../images/circle.png"
+import webDev from "../images/webdesign.svg"
+import app from "../images/appdev.svg"
+import seo from "../images/seo.svg"
+import soci from "../images/marketing.svg"
+import TrustedBy from "../component/whyChoose"
+import NavBar from "../component/nav"
+import { Zoom } from "react-reveal"
 const Home = () => {
-  const Navigate = useNavigate();
-  return (
-    <>
-      <NavBar active={'home'} />
-      <div className="bg-landing xs-down-6" id="home">
-        <video controls={false} autoPlay muted loop id="myVideo" className="">
-          <source src={vid} type="video/mp4" />
-        </video>
-      </div>
-        
-      <div className="dark-scarf xs-down-0vh">
-      {/* <Snowfall
-          color="white"       // Color of snowflakes
-          snowflakeCount={50} // Number of snowflakes
-            /> */}
-          <Fade bottom>
-          <div className="my-container xs-container centred down-30">
-            <div className="my-col-8 xs-12 xs-down-10 o-2"><span className="px40 xs-px30 white poppings-Bold">Welcome to <span className="">Anioma</span> <span className="faded-sol">Ranch</span>  and <span className="faded-sol">Produce</span> Ltd</span></div>
-            <div className="my-col-10 off down-3 "><span className="white poppings-Light px15 xs-px13">Revolutionizing Livestock Management, Empowering Communities, Securing Tomorrow</span></div>
-             <div className="my-mother centerd-elements down-5 xs-down-5 centeed">
-            <Fade bottom>
-            <a onClick={()=> {Navigate('/contact_us')}} className="px12 xs-px12 black interBold gap-elements my-btn-sm bg-red white rad-10"> Contact Us</a>
-             </Fade>
-             <Fade bottom>
-             <a href="#about" className="px12 xs-px12 black interBold gap-elements my-btn-sm bg-white mg-10 rad-10"> About Us</a>
-               </Fade>
-             </div>
-          </div>
-          </Fade>
-      </div>
-        
-        <div className="my-mother down-1 my-bottom-50" id="about">
-          <div className="my-container xs-container xs-down-3 ls-centered-align down-5">
-          <Fade left>
-            <div className="my-col-6 xs-12 xs-down-10 down-5">
-               <div><span className="px20 xs-px25 poppings-Bold">About <span className="faded-sol">Us</span></span></div>
-          <div className="my-col-5  hidden-ls off-1 down-10 xs-down-5  xs-12">
-              <div className="img-container h-600 rad-20"><img className="rad-10" src="https://img.freepik.com/free-photo/separated-grilled-ribs-wooden-board-side-view_141793-12483.jpg?ga=GA1.1.699054498.1719408236&semt=ais_hybrid" alt="" /></div>
-            </div>
-                <div className="px13 xs-px15 justify poppings-Light xs-down-5 my-mother down-3 faded">
-                At Anioma Ranch and Produce Ltd we are transforming the face of livestock management in Nigeria and beyond. Our mission is to redefine ranching by combining cutting-edge technology with eco-friendly practices to produce premium organic meats and dairy products. Specializing in the ethical rearing of cattle, goats, and pigs, we prioritize sustainable pasture management and integrated farming techniques that promote environmental conservation, community development, and food security.
-                </div>
-              <div className="my-mother hidden-xs down-5">
-              <Fade top>
-              <button onClick={()=> {Navigate('/about_us')}} className="my-btn-sm bg-red white c-pointer poppings-Bold px12 rad-10 my-b-shadow">Learn More</button>
-              </Fade>
-              </div>
-            </div>
-            </Fade>
-            <Fade right>
-            <div className="my-col-5 off-1 hidden-xs down-10 xs-down-5 xs-12">
-              <div className="img-container h-600 rad-20"><img className="rad-10" src="https://img.freepik.com/free-photo/separated-grilled-ribs-wooden-board-side-view_141793-12483.jpg?ga=GA1.1.699054498.1719408236&semt=ais_hybrid" alt="" /></div>
-            </div>
-            </Fade>
-            <div className="my-mother down-5 hidden-ls xs-down-10">
-              <Fade top>
-              <button onClick={()=> {Navigate('/about_us')}} className="my-btn-sm bg-red xs-px13 b-shadow white c-pointer poppings-Bold px12 rad-10 my-b-shadow">Learn More</button>
-              </Fade>
-              </div>
-          </div>
+  return (  <>
+
+
+  <div className="my-mother h-100-vh bg-grad" >
+     <NavBar/>
+
+    <div className="my-col-10 off-1 down-30">
+      <div className="my-col-6" >
+        <div><span className="bg-color-code-3 rad-10 px9 color-code-1 pd-10 ubuntuLight">Top #1 SEO & Digital Agency</span></div>
+        <div className="my-mother down-2">
+          <span className="px40 ubuntuBold black" >Elevate Your Brand With Expert SEO & IT Solutions</span>
         </div>
-
-        <div className="my-mother my-bottom-50">
-          <div className="my-container down-8">
-            <div className="my-mother centered"><span className="px30 poppings-Bold">Live<span className="faded-sol">Stock</span> Farming</span></div>
-            <div className="my-col-10 off-1 centered down-1">
-              <span className="px15 poppings-Light ">At Anioma Ranch and produce limited, we specialize in providing comprehensive livestock management services tailored to meet the needs </span>
-            </div>
-           
-            {/* <div className="my-mother"><LiveStock/></div> */}
-           
-            <div className="gap-elements my-mother space-50 down-10">
-              <div className="my-col-4 livestock bg-fade-2 my-b-shadow rad-10 my-bottom-50">
-                <div className="img-container h-300"><img className="rad-10" src="https://img.freepik.com/free-photo/group-pigs-domestic-animals-pig-farm_342744-522.jpg?t=st=1733141750~exp=1733145350~hmac=8daf837896e65d6b73602e32cea790b171994472d8d56739cad450552719baa1&w=740" alt="" /></div>
-               <div className="my-container down-5">
-               <div><span className="px15 poppings-Bold">Pig <span className="faded-sl">Farming</span> <i className="fas fa-angle-right poppings-Bold  mg-10 faded-sol"></i> </span></div>
-                <div className="my-mother down-2"><span className="px12 poppings-Light faded">In our pig farming, or swine production, we are focused on the breeding, raising, and management of pigs for meat (pork) and other by-products</span></div>
-                <div className="my-mother down-3">
-                  <Fade bottom>
-                   <a href="#about" className="px12 xs-px12 poppings-Light gap-elements my-btn-m red rad-10">View More</a>
-                  </Fade>
-               </div>
-               </div>
-              </div>
-
-              <div className="my-col-4 livestock bg-fade-2 my-b-shadow rad-10 my-bottom-50">
-                <div className="img-container h-300"><img className="rad-10" src="https://img.freepik.com/free-photo/high-angle-farm-with-goats_23-2148672987.jpg?t=st=1733143621~exp=1733147221~hmac=f831207c72e1fc69c23bc08b9f93e708b9817055114abce16b3c99b1735642cf&w=740" alt="" /></div>
-               <div className="my-container down-5">
-               <div><span className="px15 poppings-Bold">Goat <span className="faded-sl">Farming</span> <i className="fas fa-angle-right poppings-Bold  mg-10 faded-sol"></i> </span></div>
-                <div className="my-mother down-2"><span className="px12 poppings-Light faded">Our goat farming is a profitable and sustainable agricultural practice that involves raising goats for their milk, meat, fiber, or as pets</span></div>
-                <div className="my-mother down-3">
-                  <Fade bottom>
-                   <a href="#about" className="px12 xs-px12 poppings-Light gap-elements  red rad-10">View More</a>
-                  </Fade>
-               </div>
-               </div>
-              </div>
-
-              <div className="my-col-4 livestock bg-fade-2 my-b-shadow rad-10 my-bottom-50">
-                <div className="img-container h-300"><img className="rad-10" src="https://img.freepik.com/premium-photo/livestock-confinement-oxen-cows-sunny-day_208861-506.jpg?w=740" alt="" /></div>
-               <div className="my-container down-5">
-               <div><span className="px15 poppings-Bold">Cow <span className="faded-sl">Farming</span> <i className="fas fa-angle-right poppings-Bold  mg-10 faded-sol"></i> </span></div>
-                <div className="my-mother down-2"><span className="px12 poppings-Light faded">Our cow farming, also known as cattle farming, involves the raising and managing cows for various purposes</span></div>
-                <div className="my-mother down-3">
-                  <Fade bottom>
-                   <a href="#about" className="px12 xs-px12 poppings-Light gap-elements  red rad-10">View More</a>
-                  </Fade>
-               </div>
-               </div>
-              </div>
-
-             
-            </div>
-          </div>
-        </div>
-
-        <div className="my-mother my-bottom-50 bg-faded-" id="services">
-          <div className="my-container xs-container xs-down-10 down-5">
-            <div className="my-col-12 down-10">
-               <Fade bottom>
-               <div className="my-mother centered"><span className="px30 xs-px25 poppings-Bold">Here's What We Offer !</span></div>
-              </Fade>
-              <Fade bottom>
-              <div className="px15 xs-px15 xs-down-5 poppings-Light my-col-8 off-2 centered my-mother down-2 faded">
-                 We are more than a ranch; we are a movement committed to innovation, sustainability, and harmony.
-              </div>
-              </Fade>
-              <div className="my-mother xs-down-10 down-5">
-              <Fade bottom>
-                <div className="my-mother"><Services/></div>
-                </Fade>
-              </div>
-            </div>
-          
-          </div>
-        </div>
-
-        <div className="bg-landing-2 down-10">
-      <div className="dark-scarf-2">
-      <Snowfall
-          color="white"       // Color of snowflakes
-          snowflakeCount={100} // Number of snowflakes
-            />
-           <div className="my-col-10  xs-container off-1 h-200 xs-down-10vh bg-faded-3 my-bottom-50 down-15 cenered">
-           <Fade left>
-           <div className="my-col-10 xs-10 xs-off-1  xs-down-10 off-1 down-5 in-1"><span className="px40 xs-px25 white upper-case poppings-Bold">We are more than a Ranch, We are a <span className="">movement</span> committed to innovation, sustainability, and harmony.</span></div>
-           </Fade>
-          </div>
+        <div className="my-mother down-1" ><span className="px10 faded ubuntuLight" >Welcome to WillmaestroIt where we specialize in revolutionizing your online
+        presence through expert IT solutions.</span></div>
+        <div className="my-mother gap-elemets down-5" >
+        <a href="" className="rad-30 px9 white ubuntuBold bg-color-code-1 my-btn-sm"> Contact Now <span className="icons bg-white mg-10 px8" ><i className="fas black deg-45 fa-arrow-up" ></i></span> </a>
+        <a href="" className="rad-30 mg-10 px9 ubuntuBold bd-code-1 color-code-1 my-btn-sm">About Us <span className="icons bg-color-code-1 mg-10 px8" ><i className="fas white deg-45 fa-arrow-up" ></i></span> </a>
       </div>
-       </div>
-
-      <div className="my-mother my-bottom-50">
-        <div className="my-container xs-container xs-down-10 centeed down-10">
-        <div className="my-col-8"><span className="px30 xs-px25 poppings-Bold">Why Choose <span className="red">Anioma</span>  Ranch and Produce Ltd ?</span></div>
-         <div className="my-mother xs-down-10 down-5"><WhyChoose/></div>
-                <Fade top>
-              <button  onClick={()=> {Navigate('/contact_us')}} className="my-btn-sm xs-px15 off-2 bg-red white c-pointer poppings-Bold px12 rad-10 my-b-shadow">Contact Us Today !</button>
-              </Fade>
         </div>
+      <div className="my-col-6" >
+        <div className="circle-grad-design top-10" ></div>
+        <Zoom  > <div className="my-btn-sm bg-color-code-1  my-col-3 centered rad-30 poppings-Bold white  px8 b-shadow" >Mobile Apps</div>  </Zoom  >
+        <Zoom><div className="my-btn-sm bg-color-code-4 fl-right my-col-3 centered rad-30 poppings-Bold orange  px8 b-shadow" >Websites</div></Zoom  >
+      <Zoom ><div className="my-btn-sm bg-green top-15 my-col-3 centered rad-30 poppings-Bold green  px8 b-shadow" >Branding & SEO</div></Zoom  >
+          <Zoom  >
+           <div className="img-container top-7" ><img src={header} alt="" /></div>
+          </Zoom>
+
+        <span  className="plate-img down-20 slide" ><img src={web} alt="" /></span>
       </div>
+    </div>
+    <span  className="plate-img down-20 slide" ><img src={element} alt="" /></span>
+  </div>
   
-      <div className="my-mother my-bottom-50">
-       <div className="my-container xs-container xs-down-10 md-down-10 md-container down-3   centere">
-        <div className="my-col-4 xs-8 md-8 "><span className="px25 xs-px25 md-px20 poppings-Bold color-code-2s upper-case ">  
-        Our <span className="red">Impact</span> ?</span></div>
-      <div className="my-mother down-8 xs-down-10 ls-gap-elements space-50">
-        <div className="my-col-4 bg-pattern bg-black rad-20 bg-fade-2 xs-12 my-b-shadow md-4">
-          <div className="img-container-1 rad-unset"><img src={""} alt="" className="rad-unset" /></div>
-          <div className="my-container xs-container md-container down- xs-down-8 md-down-5">
-            <span className="px12 white upper-case poppings-Bold px15 xs-px15 md-px15">Food Security</span>
-            <div className="my-mother xs-centd xs-down-">
-              <p className="px12 xs-px15 md-px15 gap-elements alice">By producing organic, sustainable food products, we strengthen the supply chain and reduce hunger.</p>
-            </div>
+  <div className="my-mother centered-align h-30 bg-color-code-2" >
+    <div className="my-col-10 off-1 down-" >
+      <div className="gap-elts centered-align my-mother " >
+        <div className="my-col-2"><span className="px12 ubuntuMedium black" >Trusted By <br />Great Startups </span></div>
+        <div className="my-col-10" >
+          <TrustedBy/>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div className="my-mother my-bottom-50 bg-gad" >
+    <div className="my-col-8 off-2 down-15" >
+      <div className="my-mother gap-elements">
+        <div className="img-container-2 my-col-4" > <div className="bg-overlay" ></div> <img src="https://img.freepik.com/premium-photo/young-black-businessman-suit-sitting-staircase-while-using-his-laptop-work_672594-2788.jpg?ga=GA1.1.1911375869.1733410522&semt=ais_hybrid" alt="" /> </div>
+        <div className="my-col-7 down-10 mg-5" >
+          <div className="my-container down-10" >
+          <div className="my-mother top-10 " >
+         <div className="plate-img p-r top-5 " ><img className="fa-spi scale-8" src={circle} alt="" /></div>
+        </div>
+          <span className="px25 my-mother down-2 ubuntuMedium black" >Comprehensive IT & Digital Marketing Solutions.</span>
+          <div className="my-mother down-2" >
+            <span className="px10 ubuntuLight faded-2" >We are your trusted partner for comprehensive SEO and IT solutions. With our proven expertise and innovative strategies the digital landscape.</span>
+          </div> 
+          <div className="my-mother gap-elements down-3" >
+           <a href="" className="rad-30 px9 b-shadow ubuntuBold white bg-yellow my-btn-sm " >Learn More<span className="icons bg-white mg-10 px8" ><i className="fas black deg-45 fa-arrow-up" ></i></span> </a>
+          </div>
           </div>
         </div>
-        <div className="my-col-4 bg-pattern bg-black rad-20 bg-fade-2 xs-12 my-b-shadow xs-down-5 md-down-5 md-4">
-          <div className="img-container-1 rad-unset"><img src={"img4"} alt="" className="rad-unset" /></div>
-          <div className="my-container xs-container md-container down- xs-down-8 md-down-5">
-            <span className="px12 white xs-px15 md-px15 poppings-Bold upper-case">Environmental Sustainability</span>
-            <div className="my-contair xs-conainer md-container">
-              <p className="px12 xs-px15 md-px15 gap-elements alice">Our practices ensure land conservation and biodiversity preservation.s</p>
-             
-            </div>
-          </div>
-        </div>
-        <div className="my-col-4 bg-pattern bg-black rad-20 bg-fade-2 xs-12 my-b-shadow xs-down-5 md-down-5">
-          <div className="img-container-1 rad-unset"><img src={""} alt="" className="rad-unset" /></div>
-          <div className="my-container xs-container md-container down- xs-down-8 md-down-5">
-            <span className="px12 white xs-px15 md-px15 poppings-Bold upper-case">Conflict Resolution</span>
-            <div className="my-mother">
-              <p className="px12 xs-px15 md-px15 gap-elements alice"> By offering alternatives to open grazing, we contribute to peaceful coexistence among communities</p>
-            </div>
-          </div>
-        </div>
-        <div className="my-col-4 bg-pattern bg-black rad-20 bg-fade-2 xs-12 my-b-shadow xs-down-5 md-down-5">
-          <div className="img-container-1 rad-unset"><img src={""} alt="" className="rad-unset" /></div>
-          <div className="my-container xs-container md-container down- xs-down-8 md-down-5">
-            <span className="px12 white xs-px15 md-px15 poppings-Bold upper-case">Economic Growth</span>
-            <div className="my-mother">
-              <p className="px12 xs-px15 md-px15 gap-elements alice"> By creating jobs and supporting local businesses, we foster economic stability in rural areas</p>
-            </div>
-          </div>
-        </div>
+        <div className="img-container-2 down-20 my-col-3 " >
+          <div className="bg-overlay" ></div>
+          <img src="https://img.freepik.com/free-photo/healthy-lifestyle-sustained-home_23-2149362436.jpg?ga=GA1.1.1911375869.1733410522&semt=ais_hybrid" alt="" /></div>
+      </div>
+    </div>
+  </div>  
 
 
-        </div>
-       </div>
-    </div> 
 
-      <div hidden className="my-mother hidden-ls bg-pattern bg-red xs-top-3 my-bottom-50">
-        <div className="xs-container xs-down-8">
-          <div className="my-mother xs-down-8">
-            <span className="xs-px25 InterSemiBold white">
-            Welcome To Anioma Ranch and Produce LTD
-            </span>
-            <div className="my-mother xs-down-5">
-              <span className="white xs-px15">
-                $0 monthly service charge. $0 minimum deposite to open account.
-                Only possible with ScheldthBank
-              </span>
-            </div>
-            <div className="my-mother xs-down-10">
-              <button className="my-b-shadow my-btn-sm bg-white black InterSemiBold">
-                Create Account
-              </button>
-            </div>
+  <div className="my-mother my-bottom-50" >
+    <div className="my-col-8 off-2 down-5" >
+      <div className="my-col-8 off-2 down-5 centered">
+          <span className="px25 ubuntuMedium black" >Popular IT Services We Offer
+          To Build Your Business</span>
+          <div className="my-mother down-3" > <span className="px10 faded-2 ubuntuLight" >Our expert team specializes in delivering tailored solutions designed to elevate
+          your brand and drive measurable results.</span> </div>
+      </div>
+      <div className="my-mother centered-align gap-elements my-b-shadw down-5" >
+        <Zoom>
+        <div className="my-col-3 rad-10 my-b-shadow h-200 rotate card-hover bg-s1 my-bottom-50" >
+          <div className="my-container centered down-5" >
+            <div><span className="px10 ubuntuBold" >Website Development</span></div>
+            <div className="my-mother down-5 center-content centered" ><span className="plate-img p-r" ><img src={webDev} alt="" /></span></div>
+            <div className="my-mother down-2" ><span className="px9 ubuntuLight">Make a lasting impression with a professionally designed and user-friendly website. </span></div>
+          </div>
+        </div>
+        </Zoom>
+        <Zoom>
+        <div className="my-col-3 rad-10 my-b-shadow h-200 card-hover bg-s2 my-bottom-50" >
+          <div className="my-container centered down-5" >
+            <div><span className="px10 ubuntuBold" >Mobile Apps & Softwares</span></div>
+            <div className="my-mother down-5 center-content centered" ><span className="plate-img p-r" ><img src={app} alt="" /></span></div>
+            <div className="my-mother down-2" ><span className="px9 ubuntuLight">Build your startup with professionally designed and user-friendly Apps. We optimize your Apps to rank higher. </span></div>
+          </div>
+        </div>
+        </Zoom>
+        <Zoom>
+        <div className="my-col-3 rad-10 my-b-shadow h-200 card-hover bg-s3 my-bottom-50" >
+          <div className="my-container centered down-5" >
+            <div><span className="px10 ubuntuBold" >Social Media Marketing</span></div>
+            <div className="my-mother down-5 center-content centered" ><span className="plate-img p-r" ><img src={soci} alt="" /></span></div>
+            <div className="my-mother down-2" ><span className="px9 ubuntuLight">Build a strong brand presence and engage with your audience on social media platforms. </span></div>
+          </div>
+        </div>
+        </Zoom>
+        <Zoom>
+        <div className="my-col-3 rad-10 my-b-shadow h-200 card-hover bg-s4 my-bottom-50" >
+          <div className="my-container centered down-5" >
+            <div><span className="px10 ubuntuBold" >Search Engine Optimization </span></div>
+            <div className="my-mother down-5 center-content centered" ><span className="plate-img p-r" ><img src={seo} alt="" /></span></div>
+            <div className="my-mother down-2" ><span className="px9 ubuntuLight">Enhance your online visibility & drive organic traffic with our advanced SEO techniques.</span></div>
+          </div>
+        </div>
+  </Zoom>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <div className="my-mother my-bottom-50" >
+    <div className="my-col-8 off-2 down-10 centered">
+      <span className="px25 ubuntuMedium black" >Tailored Solutions, Proven Results,
+      <br /> And Exceptional Service</span>
+      <div className="my-col-8 off-2 down-3" > <span className="px10 faded-2 ubuntuLight" >We pride ourselves on delivering a value proposition that goes beyond expectations. Our
+      approach is centered on understanding your business inside.</span> </div>
+
+      <div className="my-mother gap-elements down-3 space-50" >
+      <div className="my-col-7 down-5" >
+        <div className="img-container-3 rad-30 bg-color-code-1" >
+          <div className="bg-overlay left rad-30" >
+            <div className="my-col-10 off-1 down-20" > 
+              <span className="px10 white ubuntuRegular" >Our Values</span>
+              <div className="my-mother down-3" >
+                <span className="ubuntuBold px15 white" > Explore Our Unique Value Proposition & How We Drive Business Growth</span>
+              </div>
+              </div>
+          </div>
+          <img src="https://img.freepik.com/premium-photo/people-analyzing-different-signs-symbols_53876-2404.jpg?ga=GA1.1.1911375869.1733410522&semt=ais_hybrid" alt="" /></div>
+      </div>
+      <div className="my-col-5" >
+        <div className="my-col-12 bg-s2 my-bottom-50 rad-10 down-5">
+          <div className="my-container left down-5" >
+            <div > <span className="px9 ubuntuMedium color-code-1" >Our Vision</span> </div>
+            <div className="down-1" > <span className="px10 ubuntuBold" >We strive to be more than just a service provider; we aim to be a trusted Comapany.
+           </span> </div> 
           </div>
         </div>
       </div>
+    </div>
+
+    </div>
+  </div>
 
 
- <div className="my-mother" id="contact">
- <MyFooter/>
- </div>
-    </>
-  );
-};
+  <div className="my-mother down-5 my-bottom-50" >
+    <div className="my-col-8 off-2 down-5 centered">
+      <span className="px25 ubuntuMedium black" >Latest IT & Digital Marketing News</span>
+      <div className="my-mother down-3" > <span className="px10 faded-2 ubuntuLight" >Stay up-to-date with the latest trends and developments in the IT & digital marketing space.</span> </div>
+    <div className="my-mother gap-elements down-5 space-50" >
+      <div className="my-col-7 down-5" >
+        <div className="img-container-heros bg-color-code-1" ><img src="" alt="" /></div>
+      </div>
+    </div>
+    </div>
+  </div>
 
+  </>);
+}
+ 
 export default Home;

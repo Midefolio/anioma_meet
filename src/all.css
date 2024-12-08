@@ -212,8 +212,8 @@
           animation-delay: var(--fa-animation-delay, 0);
   -webkit-animation-direction: var(--fa-animation-direction, normal);
           animation-direction: var(--fa-animation-direction, normal);
-  -webkit-animation-duration: var(--fa-animation-duration, 1s);
-          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-duration: var(--fa-animation-duration, 10s);
+          animation-duration: var(--fa-animation-duration, 10s);
   -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
           animation-iteration-count: var(--fa-animation-iteration-count, infinite);
   -webkit-animation-timing-function: var(--fa-animation-timing, linear);
